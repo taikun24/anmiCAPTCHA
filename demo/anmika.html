@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="fullscreen">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>アンミカチェッカー</title>
+</head>
+<body class="fullscreen">
+	<div class="form">
+		<h1>入力フォーム</h1>
+		<p>メールアドレス</p>
+		<input type="" name="">
+		<p>ご用件</p>
+		<textarea style="margin-bottom: 5%;"></textarea>
+		<div id="anmiCAPTCHA">
+			
+		</div>
+		<button style="margin-top: 5%;border: 3px solid #4285F4;font-size: 20px;background-color: #4285F4;color: white;border-radius: 7px;" onclick="if(correct){location.href = 'https://www.youtube.com/@taikun24';}else{alert('認証されていません。')}">確定</button>
+	</div>
+	<audio id="audio" src="audio.mp3"></audio>
+	<script src="../anmiCAPTCHA_min.js"></script>
+	<script type="text/javascript">
+		function onCAPTCHAsolved(){
+			document.body.style.backgroundImage = 'url("https://miyearnzzlabo.com/wp-content/uploads/2023/07/siro200_R.jpg")';
+			let audio = document.getElementById('audio');
+			audio.play();
+		}
+	</script>
+</body>
+</html>
